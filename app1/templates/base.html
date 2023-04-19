@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Register</title>
+	
+	<!-- 引入tailwind css样式文件 -->
+	<link rel="stylesheet" type="text/css" href="{% static 'app1/css/tailwind.css' %}">
+
+	<title>{% block title %}{% endblock %}</title>
+	{% block head %}{% endblock %}
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="flex items-center justify-between bg-blue-500 py-4 px-6">
+	<!-- 左侧logo -->
+	<div>
+		<h1 class="text-white text-lg font-bold">pknight</h1>
+	</div>
+	<!-- 搜索框 -->
+	<div class="flex-grow ml-6">
+		<form action="#" method="GET">
+			<input type="text" name="search" id="search" placeholder="Search"
+				   class="w-full bg-white rounded-md focus:outline-none focus:shadow-outline-blue border border-gray-300 py-2 px-4 block appearance-none leading-normal">
+		</form>
+	</div>
+	<!-- 用户登录元素 -->
+	<div class="flex items-center">
+		<a href="#" class="text-white mr-4">Log in</a>
+		<a href="#"
+		   class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded-md border border-gray-400">Sign
+			up</a>
+	</div>
+</nav>
+<!-- 主体内容 -->
+{% block body %}
+{% endblock %}
+</body>
+</html>

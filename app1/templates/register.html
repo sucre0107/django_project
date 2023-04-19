@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+ <!-- 登录表单 -->
+    <div class="max-w-md mx-auto mt-8 bg-white p-6 rounded-md shadow-md">
+        <!-- 标题 -->
+        <h2 class="text-lg font-medium text-gray-900 mb-4">Create an account</h2>
+        <!-- 表单 -->
+        <form action="#" method="POST">
+            <div class="space-y-4">
+                <!-- 用户名输入框 -->
+                <div>
+                    <label for="username" class="block text-gray-700 font-medium mb-2">Username</label>
+                    <input type="text" name="username" id="username" class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500" required>
+                </div>
+                <!-- 邮箱输入框 -->
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                    <input type="email" name="email" id="email" class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500" required>
+                </div>
+                <!-- 验证码输入框和发送验证码按钮 -->
+                <div>
+                    <label for="captcha" class="block text-gray-700 font-medium mb-2">Captcha</label>
+                    <div class="flex">
+                        <input type="text" name="captcha" id="captcha" class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500" required>
+                        <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue focus:bg-blue-600 transition duration-150 ease-in-out">
+                            Send
+                        </button>
+                    </div>
+                </div>
+                <!-- 密码输入框 -->
+                <div>
+                    <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                    <input type="password" name="password" id="password" class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500" required>
+                </div>
+                <!-- 确认密码输入框 -->
+                <div>
+                    <label for="confirm-password" class="block text-gray-700 font-medium mb-2">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500" required>
+                </div>
+            </div>
+            <!-- 注册按钮 -->
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mt-4 rounded-md focus:outline-none focus:shadow-outline-blue focus:bg-blue-600 transition duration-150 ease-in-out">
+                Register
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
